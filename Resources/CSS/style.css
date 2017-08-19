@@ -1,0 +1,54 @@
+  /* Overall */
+
+  html, a {
+    color: #474747;
+  }
+  /* Header */
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Muli', Verdana, sans-serif;
+    height: 64px;
+    width: 100%;
+    background-color: #EFEFEF;
+    background-size: cover;
+    position: fixed;
+  }
+
+  .header_logo_name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 32px;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+  }
+
+  .header_name_font {
+    font-size: 24px;
+  }
+
+  .header_name_bold {
+    font-weight: 700;
+  }
+
+  header img {
+    margin-left: 24px;
+    margin-right: 5px;
+  }
+
+  header nav {
+    margin-right: 24px;
+    font-size: 0;
+  }
+
+  header nav a {
+    font-size: 18px;
+  }
+
+  .header_nav_space {
+    margin-right: 16px;
+  }
