@@ -1,6 +1,6 @@
 /* Overall */
 
-html {
+body {
   line-height: 1.5;
 }
 
@@ -10,11 +10,11 @@ html {
   font-weight: 600;
 }
 
-#banner_below, .banner a, #info_quote, #info_hiring, .info_aside_text, .course_courses, .course_text {
+#banner_below, .banner a, #info_quote, #info_hiring, .info_aside_text, .course_courses, .course_text, .thesis_words, .thesis_info {
   font-family: 'Roboto', Verdana, sans-serif;
 }
 
-header footer {
+header, footer {
   font-family: 'Muli', Verdana, sans-serif;
 }
 
@@ -103,7 +103,6 @@ header nav a {
 #banner_below {
   font-size: 25px;
   font-weight: 500;
-  line-height: 1.5;
   width: 75%;
   margin-bottom: 30px;
 }
@@ -163,7 +162,6 @@ header nav a {
 
 #info_quote, #info_hiring {
   font-size: 18px;
-  line-height: 1.5;
 }
 
 #info_hiring {
@@ -182,7 +180,6 @@ header nav a {
 .info_aside_block {
   display: flex;
   flex-direction: row;
-  line-height: 1.5;
   border-radius: 15px;
 }
 
@@ -274,7 +271,6 @@ header nav a {
 .course_heading {
   font-weight: 500;
   font-size: 25px;
-  line-height: 1.5;
 }
 
 .course_courses {
@@ -285,7 +281,99 @@ header nav a {
 }
 
 .course_text {
-  line-height: 1.5;
   font-weight: 300;
   font-size: 19px;
+}
+
+
+/* Thesis Section */
+
+.thesis {
+  display: flex;
+  flex-direction: column;
+  background-color: #E1E5EA;
+  color: #566071;
+  padding: 0 24px 32px 24px;
+}
+
+.thesis_heading {
+  text-align: center;
+  margin: 32px 0;
+}
+
+.thesis_body {
+  display: flex;
+  flex-direction: row;
+}
+
+.thesis_video {
+  display: inline-flex;
+  flex-direction: column;
+  width: 60%;
+  justify-content: flex-start;
+  margin-right: 24px;
+}
+
+.thesis_quote {
+  display: flex;
+  flex-direction: column;
+}
+
+.thesis_title {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+video {
+  margin: 0 0 24px 0;
+  width: 100%;
+}
+
+.thesis_words {
+  font-size: 18px;
+}
+
+.thesis_aside {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  justify-content: center;
+}
+
+.thesis_block {
+  display: flex;
+  flex-direction: row;
+  border-radius: 15px;
+  color: #DEE5EF;
+}
+
+.thesis_block img {
+  margin: 16px;
+  width: 35%;
+  height: 50%;
+}
+
+.thesis_fisma {
+  background-color: #58829D;
+  border: 5px solid #58829D;
+  margin-bottom: 24px;
+}
+
+.thesis_now {
+  background-color: #789EB5;
+  border: 5px solid #789EB5;
+  margin-bottom: 24px;
+}
+
+.thesis_description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+}
+
+.thesis_label {
+  font-size: 27px;
+  font-weight: 600;
 }
