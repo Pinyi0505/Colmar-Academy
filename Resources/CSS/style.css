@@ -4,7 +4,7 @@ body {
   line-height: 1.5;
 }
 
-.heading, .course_heading, .course_phone {
+.heading, .course_heading, .course_phone, .courses_tap {
   font-family: 'Montserrat', Verdana, sans-serif;
   font-size: 50px;
   font-weight: 600;
@@ -16,6 +16,7 @@ body {
 
 header, footer {
   font-family: 'Muli', Verdana, sans-serif;
+  font-weight: 400;
 }
 
 @media only screen and (max-width: 1135px) {
@@ -43,6 +44,7 @@ header {
   background-size: cover;
   position: fixed;
   color: #474747;
+  z-index: 100;
 }
 
 .header_logo_name {
@@ -139,7 +141,6 @@ header nav a {
 
 #banner_heading {
   font-size: 50px;
-  font-weight: 600;
   margin-bottom: 25px;
 }
 
@@ -451,6 +452,10 @@ header nav a {
   display: none;
 }
 
+.courses_tap {
+  display: none;
+}
+
 @media only screen and (max-width: 900px) {
   .courses_heading {
     font-size: 45px;
@@ -487,14 +492,74 @@ header nav a {
     font-size: 30px;
     border: 1px solid #58829D;
   }
+  .courses a:hover {
+    background-color: #5b9ec8;
+    -webkit-box-shadow: 7px 7px 3px 0px #4a4a4a;
+    -moz-box-shadow: 7px 7px 3px 0px #4a4a4a;
+    box-shadow: 7px 7px 3px 0px #4a4a4a;
+  }
   .courses_heading {
-    margin: 0 0 16px 0;
+    margin: 0 0 -12px 0;
   }
   .course_software {
     border-radius: 15px 15px 0 0;
   }
   .course_marketing {
     border-radius: 0 0 15px 15px;
+  }
+  .courses_tap {
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin: 16px;
+  }
+  #popup_software {
+    background-color: #58829D;
+    width: 50%;
+    color: #D5DCE5;
+  }
+  #popup_software .course_description {
+    padding-left: 40px;
+  }
+  #popup_software .course_courses {
+    color: #D5DCE5;
+  }
+  #popup_software img {
+    width: 100%;
+    height: auto;
+  }
+  #popup_software a {
+    text-align: left;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    width: 90%;
+    text-align: center;
+    padding: 3px 0;
+  }
+  #popup_software a:active {
+    -webkit-box-shadow: inset 7px 7px 3px 0px #4A4A4A;
+    -moz-box-shadow: inset 7px 7px 3px 0px #4A4A4A;
+    box-shadow: inset 7px 7px 3px 0px #4A4A4A;
+  }
+  #overlay_software {
+    visibility: hidden;
+    position: absolute;
+    background-color: #B3BCC9;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -16px;
+    padding-top: 100px;
+  }
+  #overlay_software:target {
+    visibility: visible;
+  }
+  #popup_software1:target {
+    visibility: hidden;
   }
 }
 

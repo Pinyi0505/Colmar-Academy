@@ -9,7 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./Resources/Photos/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./Resources/Photos/favicon-16x16.png">
   <link rel="shortcut icon" href="./Resources/Photos/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Muli:200,300,400,600,700,800,900|Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Muli:400|Roboto:300,500,700" rel="stylesheet">
 </head>
 
 <body>
@@ -107,6 +107,7 @@
   <div class="courses">
     <!-- Heading -->
     <span class="courses_heading heading">Start learning</span>
+    <span class="courses_tap">Click or tap on each section for more information</span>
     <!-- Body of Course Section (Computer)-->
     <div class="course_body_one">
       <!-- Software Engineering -->
@@ -253,7 +254,22 @@
     </div>
     <!-- Body of Course Section (Phone) -->
     <div class="course_phone">
-      <a href="#" class="course_software">Software engineering</a>
+      <!-- Software Engineering -->
+      <a href="#overlay_software" class="course_software">Software engineering</a>
+      <div id="popup_software1">
+        <div id="overlay_software">
+          <div id="popup_software">
+            <img src="./Resources/Photos/course-software.jpg" alt="Two computers in a dark room">
+            <div class="course_description">
+              <span class="course_heading">Software engineering</span>
+              <span class="course_courses">COURSES</span>
+              <span class="course_text">Web Development, Mobile Development, iOT, APIs</span>
+              <a href="#popup_software1">Close</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <a href="#">Computer art</a>
       <a href="#">Design</a>
       <a href="#">Data</a>
