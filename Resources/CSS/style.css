@@ -136,7 +136,7 @@ header nav a {
 
 .info_main {
   display: flex;
-  margin-left: 48px;
+  margin-left: 24px;
   width: 60%;
   flex-direction: column;
   justify-content: center;
@@ -147,7 +147,7 @@ header nav a {
 }
 
 .info_main img {
-  margin: 32px 24px 32px 0px;
+  margin: 32px 0 32px 0px;
 }
 
 .info_main_description {
@@ -174,13 +174,12 @@ header nav a {
   display: flex;
   flex-direction: column;
   width: 40%;
-  margin: 32px 48px 0 auto;
+  margin: 32px 0 0 0;
 }
 
 .info_aside_block {
   display: flex;
   flex-direction: row;
-  border-radius: 15px;
 }
 
 .info_aside_block img {
@@ -210,18 +209,18 @@ header nav a {
 .info_orientation {
   background-color: #58829D;
   border: 5px solid #58829D;
-  margin-bottom: 24px;
+  border-radius: 15px 15px 0 0;
 }
 
 .info_campus {
   background-color: #789EB5;
   border: 5px solid #789EB5;
-  margin-bottom: 24px;
 }
 
 .info_guest, .info_guest a {
   background-color: #94B1C2;
   border: 5px solid #94B1C2;
+  border-radius: 0 0 15px 15px;
   color: #EAEFF5;
 }
 
@@ -243,6 +242,7 @@ header nav a {
 .course_body_one, .course_body_two {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin: 0 72px 32px 72px;
 }
 
@@ -293,7 +293,7 @@ header nav a {
   flex-direction: column;
   background-color: #E1E5EA;
   color: #566071;
-  padding: 0 24px 32px 24px;
+  padding: 0 0 32px 24px;
 }
 
 .thesis_heading {
@@ -338,14 +338,11 @@ video {
   display: flex;
   flex-direction: column;
   width: 40%;
-  justify-content: center;
 }
 
 .thesis_block {
   display: flex;
   flex-direction: row;
-  border-radius: 15px;
-  color: #DEE5EF;
 }
 
 .thesis_block img {
@@ -357,13 +354,15 @@ video {
 .thesis_fisma {
   background-color: #58829D;
   border: 5px solid #58829D;
-  margin-bottom: 24px;
+  border-radius: 15px 15px 0 0;
+  color: #DEE5EF;
 }
 
 .thesis_now {
   background-color: #789EB5;
   border: 5px solid #789EB5;
-  margin-bottom: 24px;
+  border-radius: 0 0 15px 15px;
+  color: #E7ECF3;
 }
 
 .thesis_description {
