@@ -4,14 +4,18 @@ html {
   line-height: 1.5;
 }
 
-.heading {
+.heading, .course_heading {
   font-family: 'Montserrat', Verdana, sans-serif;
   font-size: 50px;
   font-weight: 600;
 }
 
-#banner_below, .banner a, #info_quote, #info_hiring, .info_aside_text {
+#banner_below, .banner a, #info_quote, #info_hiring, .info_aside_text, .course_courses, .course_text {
   font-family: 'Roboto', Verdana, sans-serif;
+}
+
+header footer {
+  font-family: 'Muli', Verdana, sans-serif;
 }
 
 
@@ -21,7 +25,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Muli', Verdana, sans-serif;
   height: 64px;
   width: 100%;
   background-color: #EFEFEF;
@@ -54,8 +57,8 @@ header img {
 }
 
 header nav {
-  margin-right: 24px;
   font-size: 0;
+  margin-right: 12px;
 }
 
 header nav a {
@@ -208,19 +211,81 @@ header nav a {
 }
 
 .info_orientation {
-  background-color: #58829d;
-  border: 5px solid #58829d;
+  background-color: #58829D;
+  border: 5px solid #58829D;
   margin-bottom: 24px;
 }
 
 .info_campus {
-  background-color: #7a9db3;
-  border: 5px solid #7a9db3;
+  background-color: #789EB5;
+  border: 5px solid #789EB5;
   margin-bottom: 24px;
 }
 
 .info_guest, .info_guest a {
-  background-color: #94b1c2;
-  border: 5px solid #94b1c2;
-  color: #eaeff5;
+  background-color: #94B1C2;
+  border: 5px solid #94B1C2;
+  color: #EAEFF5;
+}
+
+
+/* Courses Section */
+
+.courses {
+  display: flex;
+  flex-direction: column;
+  background-color: #B3BCC9;
+  color: #5A6568;
+}
+
+.courses_heading {
+  margin: 32px 0;
+  text-align: center;
+}
+
+.course_body_one, .course_body_two {
+  display: flex;
+  flex-direction: row;
+  margin: 0 72px 32px 72px;
+}
+
+.course_body_block {
+  background-color: #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.course_body_block img {
+  height: auto;
+  width: 100%;
+}
+
+.course_description {
+  padding: 16px 16px 24px 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.course_margin {
+  margin-right: 32px;
+}
+
+.course_heading {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 1.5;
+}
+
+.course_courses {
+  font-weight: 300;
+  font-size: 18px;
+  margin: 8px 0;
+  color: #7f8c90;
+}
+
+.course_text {
+  line-height: 1.5;
+  font-weight: 300;
+  font-size: 19px;
 }
