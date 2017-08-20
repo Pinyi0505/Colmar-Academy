@@ -377,3 +377,29 @@ video {
   font-size: 27px;
   font-weight: 600;
 }
+
+
+/* Footer Section */
+
+footer {
+  margin: 16px 24px 16px 24px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #474747;
+  font-size: 18px;
+}
+
+footer nav {
+  font-size: 0;
+}
+
+footer nav a {
+  font-size: 18px;
+  color: #474747;
+}
+
+.footer_padding {
+  padding-right: 16px;
+}
