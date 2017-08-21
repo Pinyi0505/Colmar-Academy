@@ -331,7 +331,7 @@ header nav a {
   border: 5px solid #789EB5;
 }
 
-.info_guest, .info_guest a {
+.info_guest {
   background-color: #94B1C2;
   border: 5px solid #94B1C2;
   border-radius: 0 0 0 15px;
@@ -394,8 +394,9 @@ header nav a {
 }
 
 .courses_heading {
+  display: flex;
+  justify-content: center;
   margin: 32px 0;
-  text-align: center;
 }
 
 .course_body_one, .course_body_two {
@@ -456,6 +457,10 @@ header nav a {
   display: none;
 }
 
+.courses video {
+  display: none;
+}
+
 @media only screen and (max-width: 900px) {
   .courses_heading {
     font-size: 45px;
@@ -472,7 +477,10 @@ header nav a {
 }
 
 @media only screen and (max-width: 700px) {
-  .courses {
+  .courses video {
+    display: flex;
+  }
+  .padding {
     padding: 32px 16px 24px 16px;
   }
   .course_tablet {
@@ -488,8 +496,8 @@ header nav a {
     color: #D5DCE5;
     background-color: #58829D;
     margin-bottom: 8px;
-    padding: 24px 0 24px 16px;
-    font-size: 30px;
+    padding: 16px 0 16px 16px;
+    font-size: 24px;
     border: 1px solid #58829D;
   }
   .courses a:hover {
@@ -500,6 +508,12 @@ header nav a {
   }
   .courses_heading {
     margin: 0 0 -12px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .course_courses, .course_text {
+    font-size: 16px;
   }
   .course_software {
     border-radius: 15px 15px 0 0;
@@ -512,54 +526,69 @@ header nav a {
     font-size: 20px;
     font-weight: 400;
     text-align: center;
-    margin: 16px;
+    margin: 12px;
   }
-  #popup_software {
+  .popup {
     background-color: #58829D;
-    width: 50%;
+    width: 95.2%;
+    height: 40%;
     color: #D5DCE5;
+    padding-right: 20px;
+    font-size: 16px;
   }
-  #popup_software .course_description {
+  .popup .course_description {
     padding-left: 40px;
   }
-  #popup_software .course_courses {
+  .popup .course_courses {
     color: #D5DCE5;
   }
-  #popup_software img {
-    width: 100%;
-    height: auto;
-  }
-  #popup_software a {
+  .popup a {
     text-align: left;
-    font-size: 20px;
-    padding: 0;
-    margin: 0;
+    font-size: 16px;
+    margin: 10px 0 0 0;
     width: 90%;
+    height: 80%;
     text-align: center;
-    padding: 3px 0;
+    padding: 5px 0;
+    background-color: #5b9ec8;
+    -webkit-box-shadow: 3px 7px 3px 0px #4a4a4a;
+    -moz-box-shadow: 3px 5px 3px 0px #4a4a4a;
+    box-shadow: 3px 5px 3px 0px #4a4a4a;
   }
-  #popup_software a:active {
+  .popup a:active {
     -webkit-box-shadow: inset 7px 7px 3px 0px #4A4A4A;
     -moz-box-shadow: inset 7px 7px 3px 0px #4A4A4A;
     box-shadow: inset 7px 7px 3px 0px #4A4A4A;
   }
-  #overlay_software {
+  .overlay {
     visibility: hidden;
     position: absolute;
     background-color: #B3BCC9;
-    height: 100%;
+    height: 60%;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: -16px;
-    padding-top: 100px;
+    padding-top: 35px;
   }
-  #overlay_software:target {
+  .overlay:target {
     visibility: visible;
   }
-  #popup_software1:target {
+  .popup1:target {
     visibility: hidden;
+  }
+  .courses video {
+    width: 100%;
+    margin: 0;
+    padding: 16px 0 32px 0;
+    background-color: #E1E5EA;
+  }
+  .video {
+    font-size: 0;
+  }
+  .heading_phone {
+    font-size: 40px;
   }
 }
 
@@ -687,12 +716,12 @@ video {
   .thesis_phone {
     display: flex;
     justify-content: center;
-    margin: 32px 0 16px 0;
+    margin: 0;
+    padding: 40px 0 16px 0;
+    background-color: #E1E5EA;
   }
   .thesis_video {
-    width: 100%;
-    height: auto;
-    margin: 0 0 24px 0;
+    display: none;
   }
 }
 
