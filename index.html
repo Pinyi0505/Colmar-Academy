@@ -54,8 +54,8 @@
       <span class="heading" id="banner_heading">Learn something new everyday</span>
       <span id="banner_below">Lorem ipsum dolor sit amet, consecteur adipiscing elit.</span>
       <a href="#info">
-        <span>Start here</span>
-        <i class="fa fa-arrow-down fa-lg"></i>
+        <span role="button">Start here</span>
+        <i aria-label="Button to scroll down" class="fa fa-arrow-down fa-lg"></i>
       </a>
     </div>
   </div>
@@ -73,7 +73,7 @@
       </div>
     </div>
     <!-- Aside: Photos + Description -->
-    <div class="info_aside">
+    <div class="info_aside" role="complementary">
       <!-- Orientation -->
       <div class="info_border1">
         <div class="info_aside_block info_orientation">
@@ -84,8 +84,8 @@
             <span class="info_first">Orientation date</span>
             <span class="info_margin">Tue 10/11 &amp; Wed 10/12: 8am-3pm</span>
             <a href="#">
-            <span>Read more</span>
-            <i class="fa fa-angle-double-right fa-lg"></i>
+            <span role="button">Read more</span>
+            <i role="presentation" class="fa fa-angle-double-right fa-lg"></i>
           </a>
           </div>
         </div>
@@ -100,8 +100,8 @@
             <span class="info_first">Our campus</span>
             <span class="info_margin">Find which campus is close by you</span>
             <a href="#">
-            <span>Read more</span>
-            <i class="fa fa-angle-double-right fa-lg"></i>
+            <span role="button">Read more</span>
+            <i role="presentation" class="fa fa-angle-double-right fa-lg"></i>
           </a>
           </div>
         </div>
@@ -116,8 +116,8 @@
             <span class="info_first">Our guest lecture</span>
             <span class="info_margin">Join a keynote with Oliver Sack about music in medical treatment</span>
             <a href="#">
-            <span>Read more</span>
-            <i class="fa fa-angle-double-right fa-lg"></i>
+            <span role="button">Read more</span>
+            <i role="presentation" class="fa fa-angle-double-right fa-lg"></i>
           </a>
           </div>
         </div>
@@ -277,79 +277,79 @@
       <!-- Body of Course Section (Phone) -->
       <div class="course_phone">
         <!-- Software Engineering -->
-        <a href="#overlay_software" class="course_software">Software engineering</a>
+        <a role="button" href="#overlay_software" class="course_software">Software engineering</a>
         <div id="popup_software1" class="popup1">
           <div id="overlay_software" class="overlay">
             <div id="popup_software" class="popup">
               <div class="course_description">
                 <span class="course_courses">COURSES</span>
                 <span class="course_text">Web Development, Mobile Development, iOT, APIs</span>
-                <a href="#popup_software1">Close</a>
+                <a role="button" href="#popup_software1">Close</a>
               </div>
             </div>
           </div>
         </div>
         <!-- Computer Art -->
-        <a href="#overlay_computer">Computer art</a>
+        <a role="button" href="#overlay_computer">Computer art</a>
         <div id="popup_computer1" class="popup1">
           <div id="overlay_computer" class="overlay">
             <div id="popup_computer" class="popup">
               <div class="course_description">
                 <span class="course_courses">COURSES</span>
                 <span class="course_text">Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual effects, Computer Animation</span>
-                <a href="#popup_computer1">Close</a>
+                <a role="button" href="#popup_computer1">Close</a>
               </div>
             </div>
           </div>
         </div>
         <!-- Design -->
-        <a href="#overlay_design">Design</a>
+        <a role="button" href="#overlay_design">Design</a>
         <div id="popup_design1" class="popup1">
           <div id="overlay_design" class="overlay">
             <div id="popup_design" class="popup">
               <div class="course_description">
                 <span class="course_courses">COURSES</span>
                 <span class="course_text">User Experience Design, User Research, Visual Design</span>
-                <a href="#popup_design1">Close</a>
+                <a role="button" href="#popup_design1">Close</a>
               </div>
             </div>
           </div>
         </div>
         <!-- Data -->
-        <a href="#overlay_data">Data</a>
+        <a role="button" href="#overlay_data">Data</a>
         <div id="popup_data1" class="popup1">
           <div id="overlay_data" class="overlay">
             <div id="popup_data" class="popup">
               <div class="course_description">
                 <span class="course_courses">COURSES</span>
                 <span class="course_text">Data Science, Big Data, SQL, Data Visualization</span>
-                <a href="#popup_data1">Close</a>
+                <a role="button" href="#popup_data1">Close</a>
               </div>
             </div>
           </div>
         </div>
         <!-- Business -->
-        <a href="#overlay_business">Business</a>
+        <a role="button" href="#overlay_business">Business</a>
         <div id="popup_business1" class="popup1">
           <div id="overlay_business" class="overlay">
             <div id="popup_business" class="popup">
               <div class="course_description">
                 <span class="course_courses">COURSES</span>
                 <span class="course_text">Product Development, Business Development, Startup</span>
-                <a href="#popup_business1">Close</a>
+                <a role="button" href="#popup_business1">Close</a>
               </div>
             </div>
           </div>
         </div>
         <!-- Marketing -->
-        <a href="#overlay_marketing" class="course_marketing">Marketing</a>
+        <a role="button" href="#overlay_marketing" class="course_marketing">Marketing</a>
         <div id="popup_marketing1" class="popup1">
           <div id="overlay_marketing" class="overlay">
             <div id="popup_marketing" class="popup">
               <div class="course_description">
                 <span class="course_courses">COURSES</span>
                 <span class="course_text">Product Development, Business Development, Startup</span>
-                <a href="#popup_marketing1">Close</a>
+                <a role="button" href="#popup_marketing1">Close</a>
               </div>
             </div>
           </div>
@@ -372,7 +372,7 @@
       <!-- Video + Description -->
       <div class="thesis_video">
         <!-- Video -->
-        <video src="./Resources/Videos/thesis.mp4" autoplay loop>
+        <video src="./Resources/Videos/thesis.mp4" autoplay loop aria-label="video of thesis exhibit">
         </video>
         <!-- Description -->
         <div class="thesis_quote">
@@ -381,7 +381,7 @@
         </div>
       </div>
       <!-- Aside -->
-      <div class="thesis_aside">
+      <div class="thesis_aside" role="complementary">
         <!-- Fisma -->
         <div class="thesis_border1">
           <div class="thesis_block thesis_fisma">
@@ -415,8 +415,8 @@
     <span>&copy; 2016 Colmar Academy. All rights reserved</span>
     <!-- Footer Navigation (Links) -->
     <nav>
-      <a class="footer_padding" href="#">Terms</a>
-      <a href="#">Privacy</a>
+      <a role="button" class="footer_padding" href="#">Terms</a>
+      <a role="button" href="#">Privacy</a>
     </nav>
   </footer>
 </body>
