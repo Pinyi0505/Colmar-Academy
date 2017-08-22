@@ -25,7 +25,7 @@ header, footer {
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 730px) {
   body {
     line-height: 1.5;
   }
@@ -80,6 +80,10 @@ header nav a {
   color: #474747;
 }
 
+.header_top {
+  font-weight: bold;
+}
+
 .header_nav_space {
   margin-right: 16px;
 }
@@ -88,7 +92,7 @@ header nav a {
   display: none;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 730px) {
   header {
     display: flex;
     padding: 0;
@@ -112,6 +116,10 @@ header nav a {
     align-items: center;
     justify-content: space-around;
     width: 100%;
+  }
+  .header_top {
+    margin-bottom: 11px;
+    color: black;
   }
 }
 
@@ -161,6 +169,23 @@ header nav a {
   font-size: 25px;
   color: #555F6E;
   font-weight: 500;
+  transition: box-shadow 150ms ease-out;
+}
+
+.banner a:hover {
+  -webkit-box-shadow: 7px 7px 3px 0px #000;
+  -moz-box-shadow: 7px 7px 3px 0px #000;
+  box-shadow: 7px 7px 3px 0px #000;
+}
+
+.banner a:active {
+  -webkit-box-shadow: inset 7px 7px 3px 0px #000;
+  -moz-box-shadow: inset 7px 7px 3px 0px #000;
+  box-shadow: inset 7px 7px 3px 0px #000;
+}
+
+.banner i {
+  margin: auto 0 auto 10px;
 }
 
 @media only screen and (max-width: 1135px) {
@@ -206,7 +231,7 @@ header nav a {
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 730px) {
   .banner {
     flex-direction: column;
     height: 100%;
@@ -241,10 +266,6 @@ header nav a {
   flex-direction: row;
   background-color: #8A99AD;
   padding-bottom: 32px;
-  color: #DEE5EF;
-}
-
-.info a {
   color: #DEE5EF;
 }
 
@@ -320,10 +341,27 @@ header nav a {
   font-weight: 600;
 }
 
+.info a {
+  color: #DEE5EF;
+}
+
+.info i {
+  margin-left: 5px;
+}
+
+.info_border1, .info_border2, .info_border3 {
+  transition: border 300ms ease-out;
+}
+
 .info_orientation {
   background-color: #58829D;
   border: 5px solid #58829D;
   border-radius: 15px 0 0 0;
+}
+
+.info_border1:hover {
+  border: 5px solid #46677C;
+  border-radius: 20px 0 0 0;
 }
 
 .info_campus {
@@ -331,10 +369,19 @@ header nav a {
   border: 5px solid #789EB5;
 }
 
+.info_border2:hover {
+  border: 5px solid #46677C;
+}
+
 .info_guest {
   background-color: #94B1C2;
   border: 5px solid #94B1C2;
   border-radius: 0 0 0 15px;
+}
+
+.info_border3:hover {
+  border: 5px solid #46677C;
+  border-radius: 0 0 0 20px;
 }
 
 @media only screen and (max-width: 1135px) {
@@ -360,7 +407,7 @@ header nav a {
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 730px) {
   .info_main {
     display: none;
   }
@@ -380,6 +427,12 @@ header nav a {
   }
   .info_aside_text {
     font-size: 18px;
+  }
+  .info_border1:hover {
+    border-radius: 20px 20px 0 0;
+  }
+  .info_border3:hover {
+    border-radius: 0 0 20px 20px;
   }
 }
 
@@ -411,6 +464,11 @@ header nav a {
   display: flex;
   flex-direction: column;
   width: 100%;
+  transition: box-shadow 300ms ease-out;
+}
+
+.course_body_block:hover {
+  box-shadow: 0 0 0 5px #ECEFF3;
 }
 
 .course_body_block img {
@@ -476,7 +534,7 @@ header nav a {
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 730px) {
   .courses video {
     display: flex;
   }
@@ -499,6 +557,7 @@ header nav a {
     padding: 16px 0 16px 16px;
     font-size: 24px;
     border: 1px solid #58829D;
+    transition: box-shadow 300ms ease-out;
   }
   .courses a:hover {
     background-color: #5b9ec8;
@@ -658,6 +717,10 @@ video {
   height: 50%;
 }
 
+.thesis_border1, .thesis_border2 {
+  transition: border 300ms ease-out;
+}
+
 .thesis_fisma {
   background-color: #58829D;
   border: 5px solid #58829D;
@@ -665,11 +728,21 @@ video {
   color: #DEE5EF;
 }
 
+.thesis_border1:hover {
+  border: 5px solid #46677C;
+  border-radius: 20px 0 0 0;
+}
+
 .thesis_now {
   background-color: #789EB5;
   border: 5px solid #789EB5;
   border-radius: 0 0 0 15px;
   color: #E7ECF3;
+}
+
+.thesis_border2:hover {
+  border: 5px solid #46677C;
+  border-radius: 0 0 0 20px;
 }
 
 .thesis_description {
@@ -706,7 +779,7 @@ video {
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 730px) {
   .thesis {
     padding: 0;
   }
@@ -751,7 +824,7 @@ footer nav a {
   padding-right: 16px;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 730px) {
   footer {
     font-size: 16px;
   }
